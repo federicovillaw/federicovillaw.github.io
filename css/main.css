@@ -39,19 +39,172 @@
     margin: 0px;
 }*/
 
+
+/*.box.a:hover {
+    -webkit-transition: box-shadow 0.2s;
+    -moz-transition: box-shadow 0.2s;
+    transition: box-shadow 0.2s;
+}*/
+
+.box.a:hover {
+    -webkit-animation: spinAround 60s linear infinite;
+    -moz-animation: spinAround 60s linear infinite;
+    animation: spinAround 60s linear infinite;
+}
+
+.box.b:hover {
+    -webkit-animation: spinAround 50s linear infinite;
+    -moz-animation: spinAround 50s linear infinite;
+    animation: spinAround 50s linear infinite;
+}
+
+.box.c:hover {
+    -webkit-animation: spinAround 50s linear infinite;
+    -moz-animation: spinAround 50s linear infinite;
+    animation: spinAround 50s linear infinite;
+}
+
+.box.d:hover {
+    -webkit-animation: spinAround 50s linear infinite;
+    -moz-animation: spinAround 50s linear infinite;
+    animation: spinAround 50s linear infinite;
+}
+
+.box.e:hover {
+    -webkit-animation: spinAround 50s linear infinite;
+    -moz-animation: spinAround 50s linear infinite;
+    animation: spinAround 50s linear infinite;
+}
+
+.box.f:hover {
+    -webkit-animation: spinAround 50s linear infinite;
+    -moz-animation: spinAround 50s linear infinite;
+    animation: spinAround 50s linear infinite;
+}
+
+.box.g:hover {
+    -webkit-animation: spinAround 50s linear infinite;
+    -moz-animation: spinAround 50s linear infinite;
+    animation: spinAround 50s linear infinite;
+}
+
+@-webkit-keyframes spinAround {
+    from {
+        -webkit-transform: rotate(0deg)
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+@-moz-keyframes spinAround {
+    from {
+        -moz-transform: rotate(0deg)
+    }
+    to {
+        -moz-transform: rotate(360deg);
+    }
+}
+@keyframes spinAround {
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+.box:hover { 
+    opacity: .85;
+    color: white;
+}
+
 .box {
-    background-color: black;
+    background-color: #8BC34A; 
+    border-radius: 10px;
+    margin: .4em;
+
+}
+ 
+.box.a {
+    background-color: #AE1E8A;
+}
+
+.box.b {
+    background-color: #FFCF47;
+}
+
+.box.c {
+    background-color: #1CBB63;
+}
+
+.box.d {
+    background-color: #C12339;
+}
+
+.box.e {
+    background-color: #4687DF;
+}
+
+.box.f {
+    background-color: #2DBD9B;
+}
+
+.box.g {
+    background-color: #434A54;
+}
+
+<div class="box_prot"> Prototyping </div>
+    <div class="box_cont"> Contextual Research </div>
+    <div class="box_jour"> Journey Mapping </div>
+    <div class="box_servblue"> Service Blueprinting </div>
+    <div class="box_usertesting"> User Testing </div>
+    <div class="box_uiux"> UI vs UX </div>
+
+h1 {
+  top: -20px;
+  left: 20px;
+  font-family: 'Nunito', sans-serif;
+}
+
+h2 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 13px;
+    color: white;
+}
+
+a {
+    font-size: 15px;
+    font-family: 'Nunito', sans-serif;
+    color: #58595B
+    margin: 5px;
+}
+
+a:hover {
+    opacity: .85;
+
+}
+
+.button {
+    background: #AAB2BE;
+    border-radius: 10px;
+    width: 400px;
+    padding: 10px 30px 10px 30px;
+    margin: 20px;
+
 }
 
 header {
-    background: #033048;
+    background: #ffffff;
     padding: 10px 0;
     overflow: hidden;
+    font-family: 'Nunito', sans-serif;
 }
 
 header .logo {
     float: left;
-    color: white;
+    color: black;
     margin: 0px;
     padding: 0px;
     border: 0px;
@@ -74,10 +227,18 @@ header nav ul li {
     display: inline-block;
     margin: 0 4px 0 4px;
     font-size: 24px;
+
 }
 
 body { 
     text-align: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+p {
+     padding: 10px;
+     text-align: center;
+
 }
 
 .container {
@@ -94,15 +255,37 @@ body {
     text-align: center;
     line-height: 200px;
     font-size: 20px;
-    color: white;
+    color: #58595B;
     cursor: pointer;
 }
 
 section {
     float: center;
     display: inline-block;
+    width: 500px;
+    margin: 20px;
+    text-decoration-line: dotted;
+    background-color: #F0F2F5; 
+    padding: 40px;
+
 }
 
+p.info {
+    display: block;
+}
+
+.title.a {
+    background-color: #AE1E8A;
+    padding: 40px;
+    color: white;
+}
+
+h4 {
+    text-align: center;
+    margin-right: 150px;
+    margin-left: 150px;
+    
+}
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
